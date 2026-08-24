@@ -1,0 +1,38 @@
+baseline: litecogen
+training:
+  max_his_len: 20
+  embedding_size: 4096
+  batch_size: 256
+  eval_batch_size: 256
+  lr: 0.0005
+  weight_decay: 1.0e-4
+  max_epochs: 200
+  patience: 5
+model_kwargs:
+  trie_beam_width: 30
+  t5_d_model: 128
+  t5_d_ff: 1024
+  t5_d_kv: 64
+  t5_num_layers: 4
+  t5_num_decoder_layers: 4
+  t5_num_heads: 6
+  t5_dropout: 0.1
+  t5_temperature: 1.0
+  be_energy_weight: 1.0
+  codebook_embedding_dim: 64
+  posterior_temperature: 1.0
+  posterior_step_size: 0.5
+  temporal_gamma: 0.5
+semid:
+  mode: rqvae
+  num_codebooks: 3
+  codebook_size: 256
+  kmeans_iters: 100
+  rqvae_epochs: 10000
+  rqvae_batch_size: 1024
+  rqvae_lr: 0.001
+  rqvae_weight_decay: 1.0e-4
+  rqvae_hidden_size: 512
+  rqvae_code_dim: 32
+  rqvae_commitment_weight: 0.25
+  rqvae_quant_loss_weight: 1.0

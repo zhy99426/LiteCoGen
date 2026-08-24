@@ -1,0 +1,28 @@
+# Bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Output / checkpoints
+output/
+output_movies/
+
+# Data (downloaded / preprocessed)
+data/*/
+!data/preprocess.py
+
+# Environment
+.venv/
+venv/
+.env
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
