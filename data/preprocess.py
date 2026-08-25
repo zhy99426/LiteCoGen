@@ -30,7 +30,7 @@ except ImportError:
 AMAZON18_BASE_URL = "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_v2"
 DEFAULT_USER_K = 5
 DEFAULT_ITEM_K = 5
-# 2018 calendar year: 2017-01-01 00:00:00 UTC to 2019-01-01 00:00:00 UTC
+# 2017-01-01 00:00:00 UTC to 2019-01-01 00:00:00 UTC
 DEFAULT_REVIEW_START_TIMESTAMP = 1_483_228_800
 DEFAULT_REVIEW_END_TIMESTAMP = 1_546_300_800
 LETTER_FIELDS = ("title", "description", "features")
