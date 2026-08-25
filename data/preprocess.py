@@ -2,7 +2,6 @@
 """Preprocess Amazon Reviews 2018 data into inter.json + item.json format.
 
   - Downloads Amazon 2018 reviews/metadata from UCSD
-  - 2018 calendar year timestamp window
   - clean_text → normalize_meta_row → has_letter_fields → build_histories_from_rows
     → k_core_filter → remap_to_compact_ids → build_item_json
 
@@ -31,8 +30,8 @@ except ImportError:
 AMAZON18_BASE_URL = "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_v2"
 DEFAULT_USER_K = 5
 DEFAULT_ITEM_K = 5
-# 2018 calendar year: 2018-01-01 00:00:00 UTC to 2019-01-01 00:00:00 UTC
-DEFAULT_REVIEW_START_TIMESTAMP = 1_514_764_800
+# 2018 calendar year: 2017-01-01 00:00:00 UTC to 2019-01-01 00:00:00 UTC
+DEFAULT_REVIEW_START_TIMESTAMP = 1_483_228_800
 DEFAULT_REVIEW_END_TIMESTAMP = 1_546_300_800
 LETTER_FIELDS = ("title", "description", "features")
 
